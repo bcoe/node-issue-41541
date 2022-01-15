@@ -1,0 +1,10 @@
+import {http} = require('http');
+
+const foo = `{foo}`;
+
+http.createServer((request, response) => {
+  response.writeHead(200);
+  console.log(new Error().stack);
+  response.end();
+}).listen(3000);
+

@@ -1,0 +1,17 @@
+{
+  "name": "node-issue-41541",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run compile",
+    "start": "node --enable-source-maps --inspect-brk server.js",
+    "compile": "node build-server.js && tsc server.ts --inlineSourceMap"
+  },
+  "author": "Benjamin Coe <bencoe@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^17.0.8",
+    "typescript": "^4.5.4"
+  }
+}
